@@ -5,7 +5,7 @@
     font-family: "Rubik",sans-serif;
 }
 body{
-    background-color: #fab22e;
+    background-color: #222831;
 }
 .wrapper{
     width: 80vmin;
@@ -16,7 +16,7 @@ body{
     top: 50%;
     left: 50%;
     border-radius: 5px;
-    box-shadow: 20px 20px 40px rgba(97,63,0,0.4);
+
 }
 span{
     display: block;

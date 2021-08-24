@@ -1,0 +1,210 @@
+
+/*  NAV AND BODY AND DARK THEME  */
+:root {
+    --navHeight: 70px;
+    --sage: #E4E4E4;
+    --paleSpringBud: #FAF3F3;
+    --greyWhite: #FDFAF6;
+    --richBlackForeground: #0F1A20;
+    --white: #f8f8f8;
+    --black: #222;
+    --msuDark: #222831;
+    --gray: #eee;
+
+}
+
+.light-theme {
+    --themeDropDownBg: var(--msuDark);
+    --themeIconBorderColor: var(--richBlackForeground);
+    --navBg: var(--richBlackForeground);
+    --navLinkHoverBg: var(--msuDark);
+    --mainBg: var(--msuDark);
+    --fontColor: var(--white);
+
+
+}
+.dark-theme {
+
+    --themeDropDownBg: var(--greyWhite);
+    --themeIconBorderColor: var(--sage);
+    --navBg: var(--sage);
+    --navLinkHoverBg: var(--paleSpringBud);
+    --mainBg: var(--greyWhite);
+    --fontColor: var(--black);
+
+
+}
+
+a{
+    color: var(--fontColor);
+    text-decoration: none;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding:0;
+}
+.switch {
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.switch div {
+    position: relative;
+    display: block;
+    background: #eee;
+    width: 45px;
+    border-radius: 50px;
+    padding: 0 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.fa-adjust {
+    transform: rotate(180deg);
+
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #999;
+    transition: 0.4s;
+    border-radius: 34px;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: relative;
+}
+
+input:checked + .slider {
+    transform: translateX(20px);
+}
+
+nav {
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    position: relative;
+    /*padding-bottom: -10px;*/
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: var(--navHeight);
+    padding: 0 10px;
+}
+
+nav ul li {
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+* {
+    color: var(--fontColor);
+}
+
+nav {
+    background: var(--navBg);
+    color: var(--fontColor);
+}
+
+nav ul li:hover {
+    background-color: var(--navLinkHoverBg);
+}
+
+body {
+    background: var(--mainBg);
+}
+
+.card-body{
+    background: var(--navBg);
+
+}
+
+
+
+
+.pricing .card {
+    border: none;
+    border-radius: 1rem;
+    transition: all 0.2s;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.pricing hr {
+    margin: 1.5rem 0;
+}
+
+.pricing .card-title {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+}
+
+.pricing .card-price {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.pricing .card-price .period {
+    font-size: 0.8rem;
+}
+
+.pricing ul li {
+    margin-bottom: 1rem;
+}
+
+.pricing .text-muted {
+    opacity: 0.7;
+}
+
+.pricing .btn {
+    font-size: 80%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+
+/* Hover Effects on Card */
+
+@media (min-width: 992px) {
+    .pricing .card:hover {
+        margin-top: -.25rem;
+        margin-bottom: .25rem;
+        box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
+    }
+
+    .pricing .card:hover .btn {
+        opacity: 1;
+    }
+}
+
+
+
+
+
